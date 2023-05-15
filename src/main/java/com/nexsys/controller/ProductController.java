@@ -26,7 +26,7 @@ public class ProductController {
         return productService.getAllProducts();
     }
 
-    @PostMapping("/products")
+    @PostMapping("/categories")
     public ResponseEntity createProduct(@RequestBody ProductRequest product) {
         try {
             long pid = productService.createProduct(product);
